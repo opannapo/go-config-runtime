@@ -113,8 +113,8 @@ func configParse() *Config {
 
 func configPrint(key ...string) {
 	colorReset := "\033[0m"
-	colorCyan := "\033[36m"
-	//colorRed := "\033[31m"
+	//colorCyan := "\033[36m"
+	colorRed := "\033[31m"
 	//colorGreen := "\033[32m"
 	//colorYellow := "\033[33m"
 	//colorBlue := "\033[34m"
@@ -123,7 +123,7 @@ func configPrint(key ...string) {
 
 	msg := fmt.Sprintf("Config { mode:%s , user:%s , password:%s , token:%s } \n", config.Mode, config.User, config.Password, config.AuthToken)
 	for i := range key {
-		msg = strings.Replace(msg, key[i], colorCyan+key[i]+colorReset, 1)
+		msg = strings.Replace(msg, key[i], colorRed+key[i]+colorReset, 1)
 	}
 
 	fmt.Println(msg)
