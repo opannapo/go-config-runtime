@@ -1,5 +1,5 @@
 # go-config-runtime
-Realtime configuration updates on the fly (runtime). No need to restart the application.
+Realtime configuration updates on the fly. No need to restart the application.
 
 
 ### Config
